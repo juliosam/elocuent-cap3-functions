@@ -36,3 +36,33 @@ console.log(space);
 let ex3 = "Ejercicio 3";
 
 console.log(ex3);
+
+
+let countBs = function(word){
+
+    let NdBs = 0;
+    for(let count=0; count<word.length; count++){
+        if(word[count]=="B"){
+            NdBs = NdBs+1;
+        }
+    }
+    return NdBs
+}
+
+console.log(countBs("BaBasonicos BuBa DioB"));
+
+
+
+
+let countChar = function(word,letter){
+
+    let NdBs = 0;
+    for(let count=0; count<word.length; count++){
+        if(word[count]==letter){
+            NdBs = NdBs+1;
+        }
+    }
+    return NdBs
+}
+
+console.log(countChar("supercalifragilistico espiralidoso","i"));
