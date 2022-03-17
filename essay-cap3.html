@@ -1,1 +1,53 @@
-hello
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <h1>Funciones</h1>
+    <h2>Ensayo y ejercicio de capitulo 3</h2>
+    <p>Una funcion es una parte del programa dentro de una variable, esto sirve para 
+       utilizar la funcion en otras partes del programa solo llamando la variable 
+       que lo alberga. Tambien sirve para reutilizarla las veces que sea necesario, 
+       y para separarla de otras partes del programa.
+    </p>
+    <p>
+       Una funcion tradicionalmente se define con una variable, donde la funcion es 
+       el valor de la variable ( let variable = function(){} ) pero tambien se puede 
+       expresar mas directamente (function variable (){}) colocando la palabra 
+       "function" al inicio y a continuacion el nombre de la variable, el resto no
+       cambia. Por ultimo tambien se puede expresar una funcion de la forma "arrow 
+       function" que es como la forma tradicional pero con una flecha en vez de la 
+       palabra function y cambiando de lugar los parentecis de parametro(s), a antes
+       de la misma ( let variable = ()=>{}).
+    </p>
+    <p>
+        Los parametros son valores que se le asignan a la funcion cuando se le llama,
+        y que dentro de esta ultima son representados por una variable local, la 
+        cual entra en accion con las demas partes ya definidas de la funcion para 
+        dar un resultado.
+    </p>
+    <p>
+        Dentro de una funcion se pueden declarar variables pero hay que recordar que, 
+        declarando con let o const, dichas variables solo son visibles dentro de la
+        funcion, y con visibles me refiero a utilizables. Si se declara utilizando var
+        el alcance de visibilidad de la variable es diferte, mas amplio. A este alcance 
+        se le llama scope. Sin embargo una funcion si puede utilizar las variables que
+        esten fuera de ella (y no dentro de otra funcion)
+    </p>
+    <p>Las funciones con otra funcion dentro de si asignadas a una variable local
+        pueden ser llamadas por variables externas, y a su vez estas variables externas
+        pueden ser llamadas y ser utilizadas como funciones, utilizando los parametros 
+        locales de la funcion correspondiente. A esta caracteristica se le llama Closure.
+    </p>
+    <p>Una funcion ser puede llamar a si misma, siempre y cuando esto no genere un 
+        loop infinito o saturacion del stack, a esta caracteristica se le llama recurcion.
+    </p>
+
+    <script src="excercises-cap3.js"></script>
+
+</body>
+</html>
